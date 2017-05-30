@@ -1,0 +1,20 @@
+
+material *makeMaterial (C_MATERIAL *cm);
+material *addNewMaterial (C_MATERIAL *cm);
+material *materialPointer (C_MATERIAL *cm);
+triangle *makeTriangle (double [3][3], material *);
+light *makeLight (double v[3], material *m);
+void checkCurrentObject ();
+int faceHandler (int, char **);
+int sphHandler (int, char **);
+int ringHandler (int, char **);
+int cylHandler (int, char **);
+int torusHandler (int, char **);
+int coneHandler (int, char **);
+int prismHandler (int, char **);
+void vertexCallback (void *);
+void beginCallback (GLenum);
+void endCallback (void);
+void errorCallback (GLenum);
+void combineCallback (double *, double *[4], float [4], double **);
+void setCallbacks ();

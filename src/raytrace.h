@@ -1,0 +1,11 @@
+void calculateTrianglesData ();
+void diffuseRay (ray_type, double *, triangle *, double *);
+void reflectedRay (double *, double *, double *);
+void specularRay (ray_type, double *, triangle *, double *);
+void putPixelFloat (int, int, float, float, float);
+bool intersectionRayTriangle (double *, double *, triangle *, double *, double *);
+void intersectRay (triangleList, double *, double *, double, double, triangle **, double *, float *);
+void getRndTrgPoint (triangle *, double *);
+void traceRay (int, double *, double *, float, float *);
+void prepareRaytracing (void);
+void raytracing ();
